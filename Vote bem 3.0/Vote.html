@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!-- Inserção CSS / BOOTSTRAP / JAVASCRIPT -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<script src="js/scriptVote.js"></script>
+    	<script src="js/view.js"></script>
+    	<script type="text/javascript">
+    		$(function () {
+ 				 $('[data-toggle="tooltip"]').tooltip()
+			})
+    	</script>
+    	<!-- FIM Inserção CSS / BOOTSTRAP / JAVASCRIPT -->
+
+    	<title>Quiz | Vote bem</title>
+
+    	<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+
+	<style type="text/css"></style>
+
+	<body class="fundo">
+		<div class="container">
+			<div class="tab-content">
+				<div class="tab-pane active" id="inicio">
+					<div class="row">
+						<img src="img/inicial.png" class="img-responsive">
+						<div class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
+							<a href="#perguntas" data-toggle="tab">
+								<button type="button" class="btn btn-primary botao_iniciar" name="botao_inicial" id="iniciar">
+									Começar<span class="glyphicon glyphicon-share-alt"></span>
+								</button>
+							</a>
+							<a href="#inicio" data-toggle="tab" id="linkInicio"></a>
+						</div> <!-- Fim col -->
+					</div> <!-- Fim row -->
+				</div> <!-- Fim tab-pane active -->
+
+				<div class="tab-pane" id="perguntas">	
+					<div class="row">
+						<div class="principal">
+							<div class="urnaCima" ></div>
+
+							<div class="urna">
+								<div class="rectangleDir" >
+
+									<div id="logo" class="div_lg">
+										VOTE BEM
+									</div>
+
+									<div>
+										<input type="button" name="opcao" class="botao_resposta" id="concordo_m" value="Concordo muito"></input>
+									</div> <!-- Fim botao_resposta -->
+
+									<div>
+										<input type="button" name="opcao" class="botao_resposta" id="concordo" value="Concordo"></input>
+									</div> <!-- Fim botao_resposta -->
+
+									<div>
+										<input type="button" name="opcao" class="botao_resposta" id="discordo" value="Discordo"></input>
+									</div> <!-- Fim botao_resposta -->
+
+									<div>
+										<input type="button" name="opcao" class="botao_resposta" id="discordo_m" value="Discordo muito"></input>
+									</div> <!-- Fim botao_resposta -->
+
+									<div>
+										<a href="#grafico" data-toggle="tab" id="linkResultado"></a>
+										<button type="submit" name="confirmar" class="botao_confirmar" id="avancar">
+											<span class="text_enviar">Confirmar</span>
+										</button>
+									</div> <!-- Fim botao_confirmar -->
+
+									<div>
+										<button type="button" name="voltar" class="botao_voltar" id="voltar">
+											<span class="text_enviar">Voltar</span>
+										</button> <!-- Fim botao_voltar -->
+									</div>
+
+								</div> <!-- Fim urnaRectangleDir -->
+
+								<div class="rectangleEsq" >
+									<div id="area_pergunta" class="pergunta">
+										<h4 id="tituloPergunta"></h4>
+									</div> <!-- Fim pergunta -->
+
+									<div class="num_pergunta">
+									</div> <!-- Fim num_pergunta -->
+								</div>
+							</div> <!-- Fim urna -->
+						</div> <!-- Fim principal -->
+					</div> <!-- Fim row -->
+				</div> <!-- Fim tab-pane perguntas-->
+			</div> <!-- Fim tab-content -->			
+		</div> <!-- Fim coitaner -->
+	</body>
+</html>
